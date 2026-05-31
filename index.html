@@ -4444,29 +4444,4 @@ checkVoiceAlert = function() {
 
 
 
-<!-- SOUND PANEL -->
-<div class="sound-panel" id="soundPanel">
-  <div class="sound-panel-title">&#127925; Break Sound</div>
-  <div class="sound-panel-sub">Choose what plays when your break starts</div>
-  <div class="sound-presets">
-    <div class="sound-preset active" data-type="chime" onclick="setActivePreset('chime')">
-      <span class="sound-preset-icon">&#127893;</span>
-      <span class="sound-preset-name">Gentle Chime</span>
-      <button class="sound-preset-play" onclick="event.stopPropagation();generateTone('chime')">&#9654; Test</button>
-    </div>
-  </div>
-  <div class="sound-divider"></div>
-  <label class="sound-upload-btn" for="soundFileInput">
-    &#128190; Upload Your Sound (MP3 / WAV)
-    <input type="file" id="soundFileInput" accept="audio/*" style="display:none" onchange="handleCustomSoundUpload(this)">
-  </label>
-  <div class="sound-custom-name" id="customSoundName"></div>
-  <div class="sound-divider"></div>
-  <div class="sound-volume">
-    <label>Vol <span id="volLabel">80%</span></label>
-    <input type="range" min="0" max="1" step="0.05" value="0.8" oninput="updateVolume(this.value)">
-  </div>
-  <button class="sound-test-btn" onclick="testSound()">&#9654; Test Current Sound</button>
-</div>
-<button class="voice-toggle" id="soundPanelBtn" onclick="toggleSoundPanel()" style="bottom:20px;right:20px;">&#127925; Break Sound</button>
-</body></html>
+
